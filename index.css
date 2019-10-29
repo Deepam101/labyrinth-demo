@@ -1,0 +1,416 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+@font-face {
+  font-family: 'twitch';
+  src: url('DIMIS___.TTF'); /* IE9 Compat Modes */
+  src: url('DIMIS___.TTF?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('DIMIS___.TTF') format('woff'), /* Modern Browsers */
+       url('DIMIS___.TTF')  format('truetype'), /* Safari, Android, iOS */
+}
+.play{
+	z-index: 15;
+	position: absolute;
+	margin-top: 37%;
+	margin-left: 46%;
+	font-size: 30px;
+	background: #4bff0f;
+	padding: 10px;
+	border-radius: 9px;
+	border: 2px solid black;
+}
+.navbar{
+	position: absolute;
+	padding-top: 3px;
+	color: white;
+	z-index: 15;
+	text-align: center;
+	font-size: 20px;
+	width: 100%;
+	padding-bottom: 27px;
+	border-bottom: 2px solid white;
+}
+.navbaritem{
+	padding-left: 65px;
+	padding-right: 65px;
+	z-index: 15;
+	
+	border-top: 2px solid white;
+	border-top-left-radius: 15px; 
+	border-top-right-radius: 15px; 
+}
+.home1{
+	padding-bottom: 27px;
+	margin: auto;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	padding-left: 125px;
+	padding-right: 125px;	
+	border-bottom: 3px solid black;
+
+}
+.credits{
+	padding-bottom: 14px;
+	position: relative;
+	padding-left:6.2%; 
+	padding-right:6.2%;
+	border-right: 2px solid white;
+	top: 14px; 
+
+}
+.forum{
+	position: relative;
+	padding-left:6.2%; 
+	padding-right:6.2%; 
+	border-right: 2px solid white;
+	top: 27px; 
+
+}
+.rules{
+	padding-bottom: 14px;
+	position: relative;
+	padding-right:6.2%;
+	padding-left:6.2%; 
+	border-left: 2px solid white;
+	top: 14px; 
+}
+.about{
+	position: relative;
+	padding-right:6.2%;
+	padding-left:6.2%;
+	border-left: 2px solid white;
+	top: 27px;  
+}
+.navbaritem:hover{
+}
+.home{
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+}
+.heading{
+	position: absolute;
+	z-index: 15;
+	font-size:120px;
+	margin-top: 21%;
+	margin-left: 28.6%;
+	font-family: twitch;
+	color: white;
+
+}
+
+ .glitch {
+	 position: absolute;
+	 color: white;
+	 letter-spacing: 0.31em;
+	/* Animation provies a slight random skew. Check bottom of doc for more information on how to random skew. */
+	 animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+ .glitch::before {
+	 content: attr(data-text);
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 left: 2px;
+	 text-shadow: -2px 0 #ff00c1;
+	/* Creates an initial clip for our glitch. This works in a typical top,right,bottom,left fashion and creates a mask to only show a certain part of the glitch at a time. */
+	 clip: rect(44px, 450px, 56px, 0);
+	/* Runs our glitch-anim defined below to run in a 5s loop, infinitely, with an alternating animation to keep things fresh. */
+	 animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+ .glitch::after {
+	 content: attr(data-text);
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 left: -2px;
+	 text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+	 animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+/* Creates an animation with 20 steaps. For each step, it calculates a percentage for the specific step. It then generates a random clip box to be used for the random glitch effect. Also adds a very subtle skew to change the 'thickness' of the glitch.*/
+ @keyframes glitch-anim {
+	 0% {
+		 clip: rect(40px, 9999px, 64px, 0);
+		 transform: skew(0.45deg);
+	}
+	 5% {
+		 clip: rect(68px, 9999px, 36px, 0);
+		 transform: skew(0.6deg);
+	}
+	 10% {
+		 clip: rect(49px, 9999px, 24px, 0);
+		 transform: skew(0.72deg);
+	}
+	 15% {
+		 clip: rect(41px, 9999px, 29px, 0);
+		 transform: skew(0.82deg);
+	}
+	 20% {
+		 clip: rect(80px, 9999px, 73px, 0);
+		 transform: skew(0.13deg);
+	}
+	 25% {
+		 clip: rect(16px, 9999px, 4px, 0);
+		 transform: skew(0.37deg);
+	}
+	 30% {
+		 clip: rect(82px, 9999px, 57px, 0);
+		 transform: skew(0.96deg);
+	}
+	 35% {
+		 clip: rect(46px, 9999px, 18px, 0);
+		 transform: skew(0.08deg);
+	}
+	 40% {
+		 clip: rect(84px, 9999px, 95px, 0);
+		 transform: skew(0.37deg);
+	}
+	 45% {
+		 clip: rect(53px, 9999px, 56px, 0);
+		 transform: skew(0.68deg);
+	}
+	 50% {
+		 clip: rect(16px, 9999px, 95px, 0);
+		 transform: skew(0.94deg);
+	}
+	 55% {
+		 clip: rect(99px, 9999px, 23px, 0);
+		 transform: skew(0.68deg);
+	}
+	 60% {
+		 clip: rect(94px, 9999px, 77px, 0);
+		 transform: skew(0.73deg);
+	}
+	 65% {
+		 clip: rect(76px, 9999px, 53px, 0);
+		 transform: skew(0.73deg);
+	}
+	 70% {
+		 clip: rect(74px, 9999px, 91px, 0);
+		 transform: skew(0.79deg);
+	}
+	 75% {
+		 clip: rect(80px, 9999px, 1px, 0);
+		 transform: skew(0.63deg);
+	}
+	 80% {
+		 clip: rect(81px, 9999px, 52px, 0);
+		 transform: skew(0.99deg);
+	}
+	 85% {
+		 clip: rect(1px, 9999px, 90px, 0);
+		 transform: skew(0.84deg);
+	}
+	 90% {
+		 clip: rect(81px, 9999px, 73px, 0);
+		 transform: skew(0.64deg);
+	}
+	 95% {
+		 clip: rect(61px, 9999px, 7px, 0);
+		 transform: skew(0.62deg);
+	}
+	 100% {
+		 clip: rect(18px, 9999px, 21px, 0);
+		 transform: skew(0.59deg);
+	}
+}
+ @keyframes glitch-anim2 {
+	 0% {
+		 clip: rect(3px, 9999px, 4px, 0);
+		 transform: skew(0.44deg);
+	}
+	 5% {
+		 clip: rect(5px, 9999px, 29px, 0);
+		 transform: skew(0.92deg);
+	}
+	 10% {
+		 clip: rect(23px, 9999px, 4px, 0);
+		 transform: skew(0.69deg);
+	}
+	 15% {
+		 clip: rect(39px, 9999px, 26px, 0);
+		 transform: skew(0.57deg);
+	}
+	 20% {
+		 clip: rect(33px, 9999px, 93px, 0);
+		 transform: skew(0.38deg);
+	}
+	 25% {
+		 clip: rect(81px, 9999px, 63px, 0);
+		 transform: skew(0.23deg);
+	}
+	 30% {
+		 clip: rect(30px, 9999px, 13px, 0);
+		 transform: skew(0.98deg);
+	}
+	 35% {
+		 clip: rect(73px, 9999px, 65px, 0);
+		 transform: skew(0.53deg);
+	}
+	 40% {
+		 clip: rect(70px, 9999px, 82px, 0);
+		 transform: skew(0.01deg);
+	}
+	 45% {
+		 clip: rect(90px, 9999px, 28px, 0);
+		 transform: skew(0.74deg);
+	}
+	 50% {
+		 clip: rect(15px, 9999px, 49px, 0);
+		 transform: skew(0.98deg);
+	}
+	 55% {
+		 clip: rect(69px, 9999px, 73px, 0);
+		 transform: skew(0.45deg);
+	}
+	 60% {
+		 clip: rect(68px, 9999px, 87px, 0);
+		 transform: skew(0.2deg);
+	}
+	 65% {
+		 clip: rect(36px, 9999px, 88px, 0);
+		 transform: skew(0.7deg);
+	}
+	 70% {
+		 clip: rect(52px, 9999px, 24px, 0);
+		 transform: skew(0.21deg);
+	}
+	 75% {
+		 clip: rect(44px, 9999px, 46px, 0);
+		 transform: skew(0.91deg);
+	}
+	 80% {
+		 clip: rect(92px, 9999px, 19px, 0);
+		 transform: skew(0.43deg);
+	}
+	 85% {
+		 clip: rect(71px, 9999px, 1px, 0);
+		 transform: skew(0.34deg);
+	}
+	 90% {
+		 clip: rect(98px, 9999px, 83px, 0);
+		 transform: skew(0.18deg);
+	}
+	 95% {
+		 clip: rect(34px, 9999px, 41px, 0);
+		 transform: skew(0.04deg);
+	}
+	 100% {
+		 clip: rect(31px, 9999px, 69px, 0);
+		 transform: skew(0.67deg);
+	}
+}
+ @keyframes glitch-skew {
+	 0% {
+		 transform: skew(-3deg);
+	}
+	 10% {
+		 transform: skew(3deg);
+	}
+	 20% {
+		 transform: skew(-3deg);
+	}
+	 30% {
+		 transform: skew(1deg);
+	}
+	 40% {
+		 transform: skew(2deg);
+	}
+	 50% {
+		 transform: skew(4deg);
+	}
+	 60% {
+		 transform: skew(0deg);
+	}
+	 70% {
+		 transform: skew(2deg);
+	}
+	 80% {
+		 transform: skew(1deg);
+	}
+	 90% {
+		 transform: skew(-2deg);
+	}
+	 100% {
+		 transform: skew(0deg);
+	}
+}
+.fade-in {
+  animation: fadeIn ease 8s;
+  -webkit-animation: fadeIn ease 8s;
+  -moz-animation: fadeIn ease 8s;
+  -o-animation: fadeIn ease 8s;
+  -ms-animation: fadeIn ease 8s;
+}
+.fade-in1 {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* The style below is just for the appearance of the example div */
+
+.style {
+  width:90vw; height:90vh;
+  text-align:center;
+  padding-top:calc(50vh - 50px);
+  margin-left:5vw;
+  border:4px double #F00;
+  background-color:#000;
+}
+.style p {
+  color:#fff;
+  font-size:50px;
+}
