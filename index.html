@@ -2,33 +2,114 @@
 <html>
 <head>
 	<title>Labyrinth</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="heading.scss">
 <body>
-	<div class="navbar fade-in1">
-		<span class="navbaritem about">
-			ABOUT
-		</span>
-		<span class="navbaritem rules">
-			RULES
-		</span>
-		<span class="navbaritem home1">
-			HOME
-		</span>
-		<span class="navbaritem credits">
-			CREDITS
-		</span>
-		<span class="navbaritem forum">
-			FORUM
-		</span>
-	</div>
+	<header class="navbar">
+		<div class="navbar_left">
+		  <div id="home">
+			<a href="home.php">Home</a>
+		  </div>
+		  <div id="about_1">About</div>
+		</div>
+		<div class="navbar_center">
+		  <a href="https://www.springfest.in"
+			><img src="images/SFlogo.png" style="width: 7vw;"
+		  /></a>
+		</div>
+		<div class="navbar_right">
+		  <div id="rules_1">Rules</div>
+		  <div id="credits_1">Credits</div>
+		  <div onclick="window.open('https://www.facebook.com/sf.labyrinth/app/202980683107053/', '_blank');">Forum</div>
+		</div>
+	  </header>
+	  <div id="signin_modal" style="display:hidden;">
+		<div id="signin_modal_content">
+		  <div class="register">
+			<span><h1>SignUp</h1></span>
+			<form method="post">
+			  <input
+				type="text"
+				id="uname"
+				name="uname"
+				style="font-family:Arial, FontAwesome"
+				placeholder="&#xf007; UserName"
+				required="required"
+				autocomplete="off"/><br>
+			  <input
+				type="email"
+				name="email"
+				id="email"
+				style="font-family:Arial, FontAwesome"
+				placeholder="&#xf0e0; Email Address"
+				required="required"
+				autocomplete="off"
+			  /><br>
+			  <input
+				type="number"
+				name="phone"
+				id="phone"
+				style="font-family:Arial, FontAwesome"
+				placeholder="&#xf095; Phone Number"
+				required="required"
+				autocomplete="off"
+			  /><br>
+			  <input
+				type="password"
+				id="pass1"
+				name="pass"
+				style="font-family:Arial, FontAwesome"
+				placeholder="&#xf040; Password"
+				required="required"
+				autocomplete="off"
+			  /><br>
+			  <input type="password"
+				id="pass2"
+				name="pass2"
+				style="font-family:Arial, FontAwesome"
+				placeholder="&#xf040; Confirm Password"
+				required="required"
+				autocomplete="off"
+			  /><br>
+			  <button type="submit" class="btn signup-btn">SignUp</button>
+			</form>
+		  </div>
+		  <div class="login">
+			<span><h1>Login</h1></span>
+			<form method="post">
+			  <input
+				type="text"
+				id="username"
+				name="uname"
+				style="font-family:Arial, FontAwesome"
+				placeholder="&#xf007; UserName"
+				required="required"
+				autocomplete="off"
+			  /><br>
+			  <input
+				type="password"
+				id="pswd"
+				name="pass"
+				style="font-family:Arial, FontAwesome"
+				placeholder="&#xf040; Password"
+				required="required"
+				autocomplete="off"
+			  /><br>
+			  <button type="submit" class="btn login-btn">Login</button>
+			</form>
+		  </div>
+		  <span class="close_btn">&times</span>
+		</div>
+	  </div>
 		<div class="homepage">
 		<div class="heading glitch fade-in" data-text="LABYRINTH">LABYRINTH</div>	
-		<button class="play fade-in1">Play Now</button>
+		<div onClick="document.getElementById('signin_modal').style.display='block'" class="play fade-in">Play Now</div>
 		<div class="home">
 		</div>
 		</div>
-
+		
 
 </body>
 <script src="js/three.r92.min.js"></script>
