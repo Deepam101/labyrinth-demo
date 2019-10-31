@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 *{
 	padding: 0px;
 	margin: 0px;
+}
+@font-face {
+  font-family: 'twitchfill';
+  src: url('DIMITRI_.TTF'); /* IE9 Compat Modes */
+  src: url('DIMITRI_.TTF?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('DIMITRI_.TTF') format('woff'), /* Modern Browsers */
+       url('DIMITRI_.TTF')  format('truetype'), /* Safari, Android, iOS */
 }
 @font-face {
   font-family: 'twitch';
@@ -8,6 +16,34 @@
   src: url('DIMIS___.TTF?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('DIMIS___.TTF') format('woff'), /* Modern Browsers */
        url('DIMIS___.TTF')  format('truetype'), /* Safari, Android, iOS */
+}
+.pages{
+	min-height: 100%;
+	min-width: 100%;
+}
+.hidden{
+	display: none;
+}
+.rulespage{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	background-color: black;
+	color: white;
+}
+.rulesheading{
+	margin-left: 44%;
+	margin-top: 8%;
+	font-family: twitchfill;
+	font-size: 3.5em;
+	letter-spacing: 5px;
+
+}
+.rulespoint{
+	margin-top: 5%;
+	margin-left: 30%;
+	margin-right: 29%;
+	font-size: 1.2em;
 }
 .play{
 	z-index: 15;
@@ -19,6 +55,12 @@
 	padding: 10px;
 	border-radius: 9px;
 	border: 2px solid black;
+	color: black;
+    font-family: 'Righteous', cursive;
+}
+ .play:hover {
+  background-color: #29a600;
+  cursor: pointer;
 }
 .navbar{
 	position: absolute;
@@ -27,59 +69,76 @@
 	z-index: 15;
 	text-align: center;
 	font-size: 20px;
+    font-family: 'Righteous', cursive;	
 	width: 100%;
 	padding-bottom: 27px;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid #4bff0f;
+}
+.footer{
+	position: absolute;
+	z-index: 15;
+	bottom:7px;
+	margin-left: 10px; 
+}
+.footeritem{
+	padding: 7px;
 }
 .navbaritem{
 	padding-left: 65px;
 	padding-right: 65px;
 	z-index: 15;
 	
-	border-top: 2px solid white;
+	border-top: 2px solid #4bff0f;
 	border-top-left-radius: 15px; 
 	border-top-right-radius: 15px; 
 }
-.home1{
+.navbaritem:hover{
+	cursor: pointer;
+}
+#home1{
 	padding-bottom: 27px;
 	margin: auto;
-	border-left: 2px solid white;
-	border-right: 2px solid white;
+	border-left: 2px solid #4bff0f;
+	border-right: 2px solid #4bff0f;
 	padding-left: 125px;
 	padding-right: 125px;	
-	border-bottom: 3px solid black;
-
 }
-.credits{
+.bottomborderblack{
+	border-bottom: 3px solid #0a0a0a;
+}
+.bottombordergreen{
+	border-bottom-: 2px solid #4bff0f;
+}
+#credits{
 	padding-bottom: 14px;
 	position: relative;
 	padding-left:6.2%; 
 	padding-right:6.2%;
-	border-right: 2px solid white;
-	top: 14px; 
+	border-right: 2px solid #4bff0f;
+	top: 13px; 
 
 }
-.forum{
+#forum{
 	position: relative;
 	padding-left:6.2%; 
 	padding-right:6.2%; 
-	border-right: 2px solid white;
+	border-right: 2px solid #4bff0f;
 	top: 27px; 
 
 }
-.rules{
+#rules{
 	padding-bottom: 14px;
 	position: relative;
 	padding-right:6.2%;
 	padding-left:6.2%; 
-	border-left: 2px solid white;
-	top: 14px; 
+	border-left: 2px solid #4bff0f;
+	top: 13px; 
 }
-.about{
+#about{
 	position: relative;
 	padding-right:6.2%;
 	padding-left:6.2%;
-	border-left: 2px solid white;
+	border-left: 2px solid #4bff0f;
 	top: 27px;  
 }
 .navbaritem:hover{
@@ -99,7 +158,15 @@
 	color: white;
 
 }
-
+.heading2{
+	position: absolute;
+	z-index: 15;
+	font-size:60px;
+	margin-top: 30%;
+	margin-left: 45.6%;
+	font-family: twitch;
+	color: white;
+}
  .glitch {
 	 position: absolute;
 	 color: white;
@@ -400,6 +467,7 @@
   }
 }
 
+
 /* The style below is just for the appearance of the example div */
 
 .style {
@@ -413,4 +481,42 @@
 .style p {
   color:#fff;
   font-size:50px;
+}
+* {
+	 box-sizing: inherit;
+	 transition-property: all;
+	 transition-duration: 0.6s;
+	 transition-timing-function: ease;
+}
+ html, body {
+	 box-sizing: border-box;
+	 height: 100%;
+	 width: 100%;
+}
+ body {
+	 background: #a0a0a0;
+	 font-family: 'Roboto', sans-serif;
+	 font-weight: 400;
+}
+ h1 {
+	 color: #fff;
+	 font-size: 1.25em;
+	 font-weight: 900;
+	 margin: 0 0 2em;
+}
+ @media (min-width: 450px) {
+	 h1 {
+		 font-size: 1.75em;
+	}
+}
+ @media (min-width: 760px) {
+	 h1 {
+		 font-size: 3.25em;
+	}
+}
+ @media (min-width: 900px) {
+	 h1 {
+		 font-size: 5.25em;
+		 margin: 0 0 1em;
+	}
 }

@@ -2,37 +2,65 @@
 <html>
 <head>
 	<title>Labyrinth</title>
+	<link rel="shortcut icon" href="images/SFlogo_1.png" />
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="heading.scss">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<meta name="viewport" content="width=device-width">
 <body>
 	<div class="navbar fade-in1">
-		<span class="navbaritem about">
+		<span class="navbaritem btn btn-4" id="about">
 			ABOUT
 		</span>
-		<span class="navbaritem rules">
+		<span class="navbaritem " id="rules">
 			RULES
 		</span>
-		<span class="navbaritem home1">
+		<span class="navbaritem  bottomborderblack" id="home1">
 			HOME
 		</span>
-		<span class="navbaritem credits">
+		<span class="navbaritem " id="credits">
 			CREDITS
 		</span>
-		<span class="navbaritem forum">
+		<span class="navbaritem " id="forum" onclick="window.open('https://www.facebook.com/sf.labyrinth/app/202980683107053/', '_blank');">
 			FORUM
 		</span>
 	</div>
-		<div class="homepage">
-		<div class="heading glitch fade-in" data-text="LABYRINTH">LABYRINTH</div>	
-		<button class="play fade-in1">Play Now</button>
+	<div class="footer" style="width: 98%;">
+		<a href="http://www.iitkgp.ac.in/" class="footeritem"><img src="images/iit.png" width="60px"></a>
+		<a href="https://www.youtube.com/user/SpringFestForever" class="footeritem"><img src="images/youtube.png" width="60px"></a>
+		<a href="https://www.facebook.com/springfest.iitkgp/" class="footeritem"> <img src="images/fb.png" width="60px"></a>
+		<a href="https://twitter.com/springfest_kgp" class="footeritem"><img src="images/twitter.png" width="60px"></a>
+		<a href="#" style="float:right;" class="footeritem"><img src="images/mivi.png" width="60px"></a>
+		<a href="#" style="float: right;" class="footeritem"><img src="images/aws.png" width="60px"></a>
+	</div>
+	<div class="pages">
+		<div class="homepage ">
+		<div class="heading glitch fade-in" data-text="LABYRINTH">LABYRINTH</div>
+		<div class="heading2 glitch fade-in" data-text="10.0">10.0</div>	
+		<button class="play fade-in1 animated-button1">Play Now</button>
 		<div class="home">
 		</div>
 		</div>
+		<div class="rulespage hidden">
+			<div class="rulesheading">RULES</div>
+			<div class="rulespoint ">1. Life's a game, play it<br>
+								2.nnanan<br>
+								3.</div>
+		</div>
+		<div class="rulespage hidden">
+			<div class="rulesheading">ABOUT</div>
+			<div class="rulespoint">Presented by Spring Fest,Labyrinth 10.0 is an Online Mind Maze which can be quite confusing and frustrating. Answers can always be extractd by finding,following and linking all hidden clues and hints presented in your screen or webpage. Clues can be kept anywhere in the page like an image, url etc. Using other possible senses apart from common-sense may be helpful. Remember! Hints can knock your door via anything possible under the sky. Ignoring any of them may lead to severe struggle. </div>
+		</div>
+	</div>
+	
 
 
 </body>
 <script src="js/three.r92.min.js"></script>
 <script src="js/vanta.dots.min.js"></script>
+<script src="js/app.js"></script>
 <script>
 VANTA.DOTS({
   el: ".home",
