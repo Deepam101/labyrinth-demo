@@ -28,7 +28,6 @@
 	position: absolute;
 	min-height: 100%;
 	min-width: 100%;
-	background-color: black;
 	color: white;
 }
 .rulesheading{
@@ -45,6 +44,12 @@
 	margin-right: 29%;
 	font-size: 1.2em;
 }
+.sflogo{
+	margin-left: 46%; 
+	margin-top: 11%;
+	position: absolute;
+	z-index: 15;
+}
 .play{
 	z-index: 15;
 	position: absolute;
@@ -58,10 +63,7 @@
 	color: black;
     font-family: 'Righteous', cursive;
 }
- .play:hover {
-  background-color: #29a600;
-  cursor: pointer;
-}
+
 .navbar{
 	position: absolute;
 	padding-top: 3px;
@@ -84,17 +86,23 @@
 	padding: 7px;
 }
 .navbaritem{
+	cursor: pointer;
 	padding-left: 65px;
 	padding-right: 65px;
 	z-index: 15;
-	
+	line-height: 5px;
 	border-top: 2px solid #4bff0f;
 	border-top-left-radius: 15px; 
 	border-top-right-radius: 15px; 
 }
 .navbaritem:hover{
-	cursor: pointer;
+	background-color: #4bff0f;
+	color: black;
 }
+.filler{
+	height: 100%;
+}
+
 #home1{
 	padding-bottom: 27px;
 	margin: auto;
@@ -102,6 +110,10 @@
 	border-right: 2px solid #4bff0f;
 	padding-left: 125px;
 	padding-right: 125px;	
+}
+#hometext{
+	position: relative;
+	top: 13px;
 }
 .bottomborderblack{
 	border-bottom: 3px solid #0a0a0a;
@@ -141,12 +153,16 @@
 	border-left: 2px solid #4bff0f;
 	top: 27px;  
 }
-.navbaritem:hover{
-}
 .home{
 	min-height: 100%;
 	min-width: 100%;
 	position: absolute;
+}
+.backs{
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+
 }
 .heading{
 	position: absolute;
